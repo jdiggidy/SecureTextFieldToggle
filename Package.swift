@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SecureTextFieldToggle",
+    name: "SecuredTextField",
     platforms: [
             .iOS(.v15),
             .macOS(.v12)
@@ -12,16 +12,16 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SecureTextFieldToggle",
-            targets: ["SecureTextFieldToggle"]),
+            name: "SecuredTextField",
+            targets: ["SecuredTextField"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SecureTextFieldToggle"),
+            name: "SecuredTextField"),
         .testTarget(
-            name: "SecureTextFieldToggleTests",
-            dependencies: ["SecureTextFieldToggle"]),
+            name: "SecuredTextFieldTests",
+            dependencies: ["SecuredTextField"]),
     ]
 )
